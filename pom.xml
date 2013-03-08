@@ -12,7 +12,7 @@
 
   <groupId>io.tesla.maven.plugin</groupId>
   <artifactId>tesla-plugin</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
