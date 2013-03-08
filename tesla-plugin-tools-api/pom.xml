@@ -23,7 +23,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.tesla.plugin</groupId>
+    <groupId>io.tesla.maven.plugin</groupId>
     <artifactId>tesla-plugin</artifactId>
     <version>0.0.3-SNAPSHOT</version>   
   </parent>
@@ -35,7 +35,7 @@
   <dependencies>
   
     <dependency>
-      <groupId>io.tesla.plugin</groupId>
+      <groupId>io.tesla.maven.plugin</groupId>
       <artifactId>tesla-plugin-api</artifactId>
     </dependency>  
   
