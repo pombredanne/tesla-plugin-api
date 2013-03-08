@@ -20,21 +20,15 @@
   </properties>
   
   <scm>
-    <connection>scm:git:git@github.com/etesla/tesla-plugin-api.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/etesla/tesla-plugin-api.git</developerConnection>
-    <url>http://github.com/etesla/tesla-plugin-api</url>
+    <connection>scm:git:git@github.com/tesla/tesla-plugin-api.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/tesla/tesla-plugin-api.git</developerConnection>
+    <url>http://github.com/tesla/tesla-plugin-api</url>
   </scm>
       
   <modules>
     <module>tesla-plugin-api</module>
     <module>tesla-plugin-plugin</module>
     <module>tesla-plugin-tools-api</module>
-    <!--
-    <module>tesla-plugin-tools-java5</module>
-    -->
-    <!--
-    <module>tesla-simple-plugin</module>
-    -->
   </modules>
 
   <dependencyManagement>
