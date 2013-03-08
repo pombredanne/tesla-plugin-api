@@ -29,7 +29,7 @@
   <artifactId>tesla-plugin-plugin</artifactId>
   <packaging>maven-plugin</packaging>
 
-  <name>Maven Plugin Plugin</name>
+  <name>Tesla Plugin Plugin</name>
   <description>
     The Plugin Plugin is used to create a Maven plugin descriptor for any Mojo's found in the source tree,
     to include in the JAR. It is also used to generate Xdoc files for the Mojos as well as for updating the
@@ -45,45 +45,11 @@
     <pluginToolsVersion>2.9</pluginToolsVersion>
   </properties>
 
-  <!-- Copy from project up -->
-  <dependencyManagement>
-    <dependencies>
-      <!-- maven -->
-      <dependency>
-        <groupId>io.tesla.plugin</groupId>
-        <artifactId>tesla-plugin-tools-api</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.maven.plugin-tools</groupId>
-        <artifactId>maven-plugin-tools-model</artifactId>
-        <version>${pluginToolsVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.maven.plugin-tools</groupId>
-        <artifactId>maven-plugin-tools-java</artifactId>
-        <version>${pluginToolsVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.maven</groupId>
-        <artifactId>maven-plugin-descriptor</artifactId>
-        <version>${mavenVersion}</version>
-      </dependency>
-      <!-- plexus -->
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-utils</artifactId>
-        <version>2.0.5</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <dependencies>
     <!-- maven -->
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
-      <version>${mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -111,7 +77,7 @@
       <version>${mavenVersion}</version>
     </dependency>
     <dependency>
-      <groupId>io.tesla.plugin</groupId>
+      <groupId>io.tesla.maven.plugin</groupId>
       <artifactId>tesla-plugin-tools-api</artifactId>
     </dependency>
     <dependency>
