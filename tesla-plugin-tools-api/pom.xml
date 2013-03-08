@@ -25,7 +25,7 @@
   <parent>
     <groupId>io.tesla.maven.plugin</groupId>
     <artifactId>tesla-plugin</artifactId>
-    <version>0.0.3-SNAPSHOT</version>   
+    <version>0.0.3</version>   
   </parent>
   <artifactId>tesla-plugin-tools-api</artifactId>
 
