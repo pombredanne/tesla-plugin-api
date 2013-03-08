@@ -36,22 +36,6 @@
     plugin registry, the artifact metadata and a generic help goal.
   </description>
 
-  <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/plugin-tools/trunk/maven-plugin-plugin/</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/plugin-tools/trunk/maven-plugin-plugin/</developerConnection>
-    <url>http://svn.apache.org/viewvc/maven/plugin-tools/trunk/maven-plugin-plugin/</url>
-  </scm>
-  <issueManagement>
-    <system>jira</system>
-    <url>http://jira.codehaus.org/browse/MPLUGIN</url>
-  </issueManagement>
-  <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scp://people.apache.org/www/maven.apache.org/plugins/maven-plugin-plugin</url>
-    </site>
-  </distributionManagement>
-
   <prerequisites>
     <maven>2.0.6</maven>
   </prerequisites>
