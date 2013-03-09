@@ -19,6 +19,10 @@ package org.apache.maven.plugin.plugin;
  * under the License.
  */
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Set;
+
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.descriptor.InvalidPluginDescriptorException;
@@ -31,10 +35,6 @@ import org.apache.maven.tools.plugin.generator.Generator;
 import org.apache.maven.tools.plugin.scanner.MojoScanner;
 import org.apache.maven.tools.plugin.util.PluginUtils;
 import org.codehaus.plexus.util.ReaderFactory;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Set;
 
 /**
  * Abstract class for this Plugin.
@@ -123,7 +123,7 @@ public abstract class AbstractGeneratorMojo
             return;
         }
 
-        String defaultGoalPrefix = PluginDescriptor.getGoalPrefixFromArtifactId( project.getArtifactId() );
+        String defaultGoalPrefix = TeslaPluginUtils.getGoalPrefixFromArtifactId( project.getArtifactId() );
         if ( goalPrefix == null )
         {
             goalPrefix = defaultGoalPrefix;
@@ -194,5 +194,4 @@ public abstract class AbstractGeneratorMojo
                 + " Please check the plugin dependencies configured in the POM and ensure the versions match.", e );
         }
     }
-
 }

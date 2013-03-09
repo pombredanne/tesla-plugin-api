@@ -26,6 +26,8 @@ import org.apache.maven.artifact.repository.metadata.Versioning;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.descriptor.PluginDescriptor;
+import org.apache.maven.plugin.plugin.AbstractGeneratorMojo;
+import org.apache.maven.plugin.plugin.TeslaPluginUtils;
 import org.apache.maven.project.MavenProject;
 
 /**
@@ -82,7 +84,7 @@ public class AddPluginArtifactMetadataMojo
     {
         if ( goalPrefix == null )
         {
-            goalPrefix = PluginDescriptor.getGoalPrefixFromArtifactId( project.getArtifactId() );
+            goalPrefix = TeslaPluginUtils.getGoalPrefixFromArtifactId( project.getArtifactId() );
         }
 
         return goalPrefix;
