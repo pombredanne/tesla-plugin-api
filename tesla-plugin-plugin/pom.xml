@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.tesla.maven.plugin</groupId>
+    <groupId>io.tesla.maven.plugins</groupId>
     <artifactId>tesla-plugin</artifactId>
     <version>0.0.5-SNAPSHOT</version>   
   </parent>
@@ -77,7 +77,7 @@
       <version>${mavenVersion}</version>
     </dependency>
     <dependency>
-      <groupId>io.tesla.maven.plugin</groupId>
+      <groupId>io.tesla.maven.plugins</groupId>
       <artifactId>tesla-plugin-tools-api</artifactId>
     </dependency>
     <dependency>
